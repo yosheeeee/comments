@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" width="1330">
+    <title>Comments</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <section class="post">
+        <div class="author">
+            <div class="author-data">
+                <img src="./src/profile.svg" alt="profile">
+                <p>Vladimir Putin</p>
+            </div>
+            <p id="post-date">date</p>
+        </div>
+        <img src="./src/meme.webp" alt="post-picture">
+        <div class="statistic">
+            <div class="likes">
+                <button id="post-like" class="post-not-liked"></button>
+                <p class="like-counter">15 likes</p>
+            </div>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+
+    <form name = "addComment" class="addComment">
+        <input type="text" name="userName" tabindex="1" placeholder="input name">
+        <input type="text" name="commentText" tabindex="2" placeholder="comment text">
+        <input type="date" name="commentDate" tabindex="3">
+        <input type="submit" value="send" tabindex="4">
+    </form>
+
+    <div class="comment">
+        <div class="comment-user">
+            <img src="./src/profile.svg" alt="profile-image">
+            <p>Vladimir Zelensky</p>
+            <p>•</p>
+            <p id="comment-date">date</p>
+            <img src="./src/bin.svg" alt="bin" class="bin">
+        </div>
+        <p class="comment-text">So cool man</p>
+        <div class="comment-likes">
+            <div class="likes">
+                <button id="comment-like" class="post-not-liked"></button>
+                <p class="like-counter">15 likes</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- TODO: --
+1) пост
+2) форма для добавления комментария в которой:
+    1) имя 
+    2) текст
+    3) Дата (возможно оставить пустой)
+    4) кнопка отправить
+3) валидация 
+4) комментарий: 
+    1) имя
+    2) текст
+    3) дата в формате (сегодня\вчера\ такого-то-дня в hh:mm)
+    4) кнопка удаление комментария
+    5) кнопка лайка
+-->
