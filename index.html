@@ -26,7 +26,6 @@
             </div>
         </div>
     </section>
-    <script src="./index.js"></script>
 
     <form name = "addComment" class="addComment">
         <input type="text" name="userName" tabindex="1" placeholder="input name">
@@ -40,17 +39,18 @@
             <img src="./src/profile.svg" alt="profile-image">
             <p>Vladimir Zelensky</p>
             <p>•</p>
-            <p id="comment-date">date</p>
-            <img src="./src/bin.svg" alt="bin" class="bin">
+            <p id="comment-date">yesterday</p>
+            <img src="./src/bin.svg" alt="bin" class="bin" onclick="deleteComment(event)">
         </div>
         <p class="comment-text">So cool man</p>
         <div class="comment-likes">
             <div class="likes">
-                <button id="comment-like" class="post-not-liked"></button>
+                <button  class="post-not-liked comment-like" onclick="addLike(event)"></button>
                 <p class="like-counter">15 likes</p>
             </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -121,7 +121,12 @@ $width : 1330px;
         background-color: #35363a;
         color: white;
     }
+
+    .wrong{
+        border: 1px solid red;
+    }
 }
+
 
 .comment {
     width: 800px;
@@ -158,18 +163,19 @@ $width : 1330px;
         }
     }
     
-    .likes{
+    .likes, .comment-likes{
         display: flex;
         flex-direction: row;
         gap: 10px;
         align-items: center;
     }
 
-    #comment-like{
+    .comment-like{
         border: 0;
         background-color: white;
         width: 24px;
         height: 24px;
         cursor: pointer;
     }
+
 }
